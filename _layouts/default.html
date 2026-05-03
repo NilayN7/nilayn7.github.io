@@ -7,7 +7,7 @@
   <!-- The above meta tags must come first -->
 
   <meta name="author" content="{{ site.name }}" />
-  <title>{{ site.name }}</title>
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
 
   <!-- Bootstrap CSS 4.6.0, never versions fail to load -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -15,7 +15,7 @@
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/fevicon.ico">
 
 </head>
 
