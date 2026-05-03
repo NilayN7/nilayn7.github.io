@@ -1,36 +1,59 @@
 ---
 layout: default
+title: About
 ---
 
-<div class="row flex-column-reverse flex-md-row py-2">
+<section class="hero row flex-column-reverse flex-md-row py-4 align-items-center">
     <div class="col-md-8" id="bio">
+        <p class="eyebrow">Graduate Student · Computer Science · UCLA</p>
         <h1>Nilay Naharas</h1>
         <p>
-            I am a graduate student in <a href = "https://www.cs.ucla.edu/"> <u> Computer Science </u> </a> at the <a href = "https://www.ucla.edu/"> <u> University of California, Los Angeles (UCLA) </u> </a>. I am passionate about bridging the gap between cutting-edge machine learning research and its practical application, ensuring that deployed solutions are not only reliable but also secure and impactful.
+            I am a graduate student in <a href="https://www.cs.ucla.edu/"><u>Computer Science</u></a> at the <a href="https://www.ucla.edu/"><u>University of California, Los Angeles (UCLA)</u></a>. I am passionate about bridging the gap between cutting-edge machine learning research and practical application, with a focus on reliable, secure, and impactful deployed systems.
         </p>
         <p>
-            In August 2023, I graduated from the <a href = "https://www.iitjammu.ac.in/"> <u> Indian Institute of Technology Jammu (IIT Jammu) </u> </a> with a B.Tech. in Electrical Engineering with a minor in Computer Science and Engineering. I worked on "Low-light Action Recognition" for my B.Tech. thesis under the guidance of <a href = "https://sites.google.com/view/badrisubudhi/home"><u> Prof. Badri N. Subudhi </u> </a>. I had the privilege of working on the project "Adversarially Robust and Efficient Neural Networks" under the mentorship of <a href = "https://cfaed.tu-dresden.de/pd-staff-kumar> <u> Prof. Akash Kumar </u> </a> at <a href="https://tu-dresden.de/?set_language=en"> <u> TU Dresden </u> </a>, as well as the innovative "Drill Core Analysis" guided by <a href="https://rohitash-chandra.github.io/"> <u> Prof. Rohitash Chandra </u> </a> at the <a href="https://www.unsw.edu.au/"> <u> University of New South Wales Sydney (UNSW) </u> </a>. I spent the summer of 2022 at <a href = "https://www.worldquant.com/"> <u> WorldQuant </u> </a>as a Quantitative Research intern. My experience also includes an internship at <a href ="https://www.se.com/in/en/"> <u> Schneider Electric </u> </a>, where I focused on "Solder Joint Reliability Prediction for Printed Circuit Boards (PCBs)". Prior to these roles, I was an undergraduate researcher at <a href="https://www.ic-resq.com/"> <u> IC-ResQ Lab </u> </a> under the supervision of <a href="https://www.ic-resq.com/people/group-leader"> <u> Dr. Ambika Prasad Shah </u> </a>, where I worked on developing a True Random Number Generator (TRNG) utilizing Quantum Cellular Automata (QCA).
+            In August 2023, I graduated from the <a href="https://www.iitjammu.ac.in/"><u>Indian Institute of Technology Jammu (IIT Jammu)</u></a> with a B.Tech. in Electrical Engineering and a minor in Computer Science and Engineering. My past work spans low-light action recognition, adversarially robust neural networks, drill core analysis, quantitative research, PCB reliability prediction, and hardware-security primitives using Quantum Cellular Automata.
         </p>
         <p>
-            My research interests lie in Multimodal Machine Learning, Computer Vision, Reinforcement Learning and Natural Language Processing.
+            My research interests lie in Multimodal Machine Learning, Computer Vision, Reinforcement Learning, and Natural Language Processing.
         </p>
-        <p style="text-align:center">
-<!--             <a target="_blank" href="https://mailhide.io/">Email</a> &nbsp;/&nbsp; -->
-            <a href="mailto: nilaynaharas@g.ucla.edu"><u>Email</u></a> &nbsp;/&nbsp;
-            <a href="https://drive.google.com/file/d/1OgC8rtLQ36pZKSxHixYmjY2VzlTTqM77/view?usp=sharing"><u>CV</u></a> &nbsp;/&nbsp;
-            <a href="https://drive.google.com/file/d/1myMiyT2ZxZOxJdcI6xiL-Yi-QgKVySVl/view?usp=sharing"><u>Resume</u></a> &nbsp;/&nbsp;
+
+        <div class="hero-actions">
+            <a class="btn btn-primary" href="{{ site.baseurl }}/publications/">View Publications</a>
+            <a class="btn btn-outline-primary" href="{{ site.baseurl }}/projects/">View Projects</a>
+            <a class="btn btn-outline-secondary" href="{{ site.baseurl }}/cv/">Open CV</a>
+        </div>
+
+        <p class="quick-links">
+            <a href="mailto:nilay@cs.ucla.edu"><u>Email</u></a> &nbsp;/&nbsp;
             <a href="https://github.com/NilayN7"><u>GitHub</u></a> &nbsp;/&nbsp;
-<!--             <a href="https://twitter.com/">Twitter</a> &nbsp;/&nbsp; -->
-            <a href="https://scholar.google.com/citations?user=Dtu383sAAAAJ&hl=en"><u>Google Scholar</u></a> &nbsp;/&nbsp; 
-            <a href="https://openreview.net/profile?id=~Nilay_Naharas1"><u>OpenReview</u></a> &nbsp;/&nbsp; 
-            <a href="https://www.linkedin.com/in/nilay-naharas-5b1a96247/"><u>LinkedIn </u></a>
+            <a href="https://scholar.google.com/citations?user=Dtu383sAAAAJ&hl=en"><u>Google Scholar</u></a> &nbsp;/&nbsp;
+            <a href="https://openreview.net/profile?id=~Nilay_Naharas1"><u>OpenReview</u></a> &nbsp;/&nbsp;
+            <a href="https://www.linkedin.com/in/nilay-naharas/"><u>LinkedIn</u></a>
         </p>
     </div>
+
     <div class="col-md-4" style="z-index:4;">
-        <img alt="profile photo" id="portrait" src="images/headshot.jpg">
+        <img alt="profile photo" id="portrait" src="{{ site.baseurl }}/images/headshot.jpg">
     </div>
-</div>
+</section>
 
-{% include projects.html %} 
-{% include publications.html %} 
-
+<section class="row py-4 landing-cards">
+    <div class="col-md-4 mb-3">
+        <a class="landing-card" href="{{ site.baseurl }}/publications/">
+            <span>Publications</span>
+            <p>Peer-reviewed papers and research outputs.</p>
+        </a>
+    </div>
+    <div class="col-md-4 mb-3">
+        <a class="landing-card" href="{{ site.baseurl }}/projects/">
+            <span>Projects</span>
+            <p>Research, coursework, and engineering projects.</p>
+        </a>
+    </div>
+    <div class="col-md-4 mb-3">
+        <a class="landing-card" href="{{ site.baseurl }}/contact/">
+            <span>Contact</span>
+            <p>Email and professional profiles.</p>
+        </a>
+    </div>
+</section>
